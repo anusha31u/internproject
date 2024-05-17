@@ -30,4 +30,4 @@ http://127.0.0.1:8000/api/myanu
 
 ## to search word 
 if u want to search apple :
-http://127.0.0.1:8000/api/search/?word=apple
+http://127.0.0.1:8000/api/search/
