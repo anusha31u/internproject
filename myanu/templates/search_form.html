@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+</head>
+<body>
+    <!-- search_form.html -->
+    <form id="searchForm" method="post">
+        {% csrf_token %}
+        <label for="searchWord">Enter a word:</label>
+        <input type="text" id="searchWord" name="searchWord" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResults"></div>
+    <script src="{% static 'js/search.js' %}"></script>
+</body>
+</html>
+
+
+
